@@ -8,19 +8,31 @@
     <fragment
         android:id="@+id/fragmnt_Home"
         android:name="com.example.takenotes.ui.HomeFragment"
-        android:label="fragment_fragmnt__home"
+        android:label="Take Notes"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_fragmnt_Home_to_fragment_createNote"
             app:destination="@id/fragment_CrateNotes" />
+        <action
+            android:id="@+id/action_fragmnt_Home_to_editNotesFragment"
+            app:destination="@id/editNotesFragment" />
     </fragment>
     <fragment
         android:id="@+id/fragment_CrateNotes"
         android:name="com.example.takenotes.ui.CreateNotesFragment"
-        android:label="fragment__edit_note"
+        android:label="Add new Notes"
         tools:layout="@layout/fragment_create_notes" >
         <action
             android:id="@+id/action_fragment_createNote_to_fragmnt_Home"
+            app:destination="@id/fragmnt_Home" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNotesFragment"
+        android:name="com.example.takenotes.ui.EditNotesFragment"
+        android:label="fragment_edit_notes"
+        tools:layout="@layout/fragment_edit_notes" >
+        <action
+            android:id="@+id/action_editNotesFragment_to_fragmnt_Home"
             app:destination="@id/fragmnt_Home" />
     </fragment>
 </navigation>
