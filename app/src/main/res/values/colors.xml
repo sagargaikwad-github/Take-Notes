@@ -4,5 +4,8 @@
     <color name="white">#FFFFFFFF</color>
 
 
-    <color name="color_primary">#F13A2D</color>
+<!--    <color name="color_primary">#F13A2D</color>-->
+    <color name="color_primary">#F65E53</color>
+<!--    <color name="color_primary">#D84BF1</color>-->
+<!--    <color name="FirstCardColor">#FBF8DA</color>-->
 </resources>

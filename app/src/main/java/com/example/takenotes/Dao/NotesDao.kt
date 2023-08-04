@@ -11,7 +11,7 @@ import com.example.takenotes.Model.Notes
 
 @Dao
 interface NotesDao {
-    @Query("Select * from Notes")
+    @Query("Select * from Notes ORDER BY id desc")
     fun getNotes():LiveData<List<Notes>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

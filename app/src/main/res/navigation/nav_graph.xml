@@ -12,10 +12,11 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_fragmnt_Home_to_fragment_createNote"
+            app:popUpToInclusive="true"
             app:destination="@id/fragment_CrateNotes" />
         <action
             android:id="@+id/action_fragmnt_Home_to_editNotesFragment"
-            app:destination="@id/editNotesFragment" />
+            app:destination="@id/fragment_EditNotes" />
     </fragment>
     <fragment
         android:id="@+id/fragment_CrateNotes"
@@ -27,9 +28,9 @@
             app:destination="@id/fragmnt_Home" />
     </fragment>
     <fragment
-        android:id="@+id/editNotesFragment"
+        android:id="@+id/fragment_EditNotes"
         android:name="com.example.takenotes.ui.EditNotesFragment"
-        android:label="fragment_edit_notes"
+        android:label="Edit Note"
         tools:layout="@layout/fragment_edit_notes" >
         <action
             android:id="@+id/action_editNotesFragment_to_fragmnt_Home"

@@ -1,5 +1,6 @@
 package com.example.takenotes
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
@@ -21,10 +22,17 @@ class MainActivity : AppCompatActivity() {
         navController = findNavController(R.id.fragmentContainerView)
 
         setSupportActionBar(binding.toolbar)
+
         setupActionBarWithNavController(navController)
+
     }
 
-    override fun onNavigateUp(): Boolean {
-        return navController.navigateUp() || super.onNavigateUp()
+//    override fun onNavigateUp(): Boolean {
+//        return navController.navigateUp() || super.onNavigateUp()
+//    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp() ||  super.onSupportNavigateUp()
     }
+
 }
